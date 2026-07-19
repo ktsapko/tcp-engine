@@ -24,9 +24,7 @@ class TcpEngineConan(ConanFile):
 
     def generate(self):
         toolchain = CMakeToolchain(self)
-        toolchain.generate()
-
-    def build(self):
-        cmake = CMake(self)
-        cmake.configure()
-        cmake.build()
+        toolchain.generate()   
+    
+    def requirements(self):
+        self.requires("spdlog/1.16.0")

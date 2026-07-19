@@ -1,4 +1,6 @@
-int main()
-{
-    return 0;
+#include <spdlog/spdlog.h>
+
+int main() {
+  spdlog::info("TcpEngine started");
+  return 0;
 }
