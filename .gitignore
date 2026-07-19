@@ -27,6 +27,8 @@ conanbuild.sh
 conanrun.sh
 conan.lock
 generators/
+build/
+CMakePresets.json
 
 # VS Code
 .vscode/*
