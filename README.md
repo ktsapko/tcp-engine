@@ -1,6 +1,6 @@
 # tcp-engine
 
-A modern C++ TCP server built from scratch to explore asynchronous networking, concurrency, and systems programming.
+A modern C++ TCP server built with Boost.Asio to explore asynchronous networking, concurrency, and systems programming.
 
 ## Features
 
@@ -42,16 +42,17 @@ tests/
 docs/
 ```
 
-## Roadmap
+## Development Roadmap
 
+- [x] Project bootstrap
+- [ ] Conan integration
+- [ ] Logging
 - [ ] TCP acceptor
 - [ ] Session management
 - [ ] Binary protocol
-- [ ] Ring Buffer
 - [ ] Thread Pool
-- [ ] Logging
-- [ ] Graceful shutdown
-- [ ] Performance tests
+- [ ] Ring Buffer
+- [ ] Unit tests
 
 ## License
 
