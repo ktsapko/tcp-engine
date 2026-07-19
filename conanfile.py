@@ -28,3 +28,4 @@ class TcpEngineConan(ConanFile):
     
     def requirements(self):
         self.requires("spdlog/1.16.0")
+        self.requires("boost/1.91.0")
