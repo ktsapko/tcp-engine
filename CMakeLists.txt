@@ -7,7 +7,16 @@ project(
 find_package(spdlog REQUIRED)
 find_package(Boost REQUIRED)
 
-add_executable(tcp_engine app/main.cpp)
+add_executable(
+  tcp_engine
+  app/main.cpp
+  src/TcpServer.cpp
+  )
+target_include_directories(
+    tcp_engine
+    PRIVATE
+        include
+)
 
 target_compile_features(tcp_engine PRIVATE cxx_std_23)
 

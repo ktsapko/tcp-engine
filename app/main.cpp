@@ -1,10 +1,13 @@
 #include <boost/asio.hpp>
-#include <spdlog/spdlog.h>
+
+#include "tcp/TcpServer.hpp"
 
 int main() {
   boost::asio::io_context io_context;
 
-  spdlog::info("TcpEngine started");
+  tcp::TcpServer server(io_context);
+
+  server.Start();
 
   return 0;
 }
